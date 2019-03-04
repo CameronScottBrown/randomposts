@@ -1,0 +1,156 @@
+/* Primitive Bootstrap Overrides */
+
+
+/* Navbar */
+
+.navbar {
+    border-bottom: 1px solid white;
+}
+
+.navbar.bg-dark {
+    background-color: #232323 !important;
+}
+
+/* Backgrounds and Containers */
+
+body {
+    background-image: linear-gradient(to left, blue, purple);
+}
+
+.jumbotron {
+    background: transparent !important;
+    color: white;
+    border: 1px solid white;
+    border-radius: 200px 0 200px 0px !important;
+}
+
+.row.login {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: black;
+    align-items: center;
+    border-radius: 20px
+}
+
+.row.login p {
+    flex: 1;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.row.login pre {
+    flex: 3;
+    padding: 10px;
+}
+
+.row.login pre {
+    font-size: 1.2rem;
+    color: lime;
+    padding-right: -30px;
+    margin-top: 20px;
+    border: 1px solid lime;
+    
+}
+
+@media only screen and (max-width: 768px) {
+    .row.login {
+        flex-direction: column;
+        padding-top: 20px;
+    }
+
+    .row.login pre {
+        margin-top: 0;
+    }
+}
+
+.card.card-body {
+    background-color: rgb(233, 233, 233, .82);
+}
+
+.card.card-body .bg-light {
+    background-color: rgb(255, 255, 255, .5) !important;
+    margin: 0 -20px;
+}
+
+.container.mt-3 {
+    background-color: rgb(255, 255, 255, .82);
+    padding: 3rem 3rem 1rem 3rem;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+.container.mt-3 div.bg-light {
+    background-color: rgb(233, 233, 233, .5) !important;
+}
+
+/* Typography + Text Color */
+span.switch {
+    color: magenta;
+    opacity: 1;
+    transition: .8s opacity; 
+}
+
+h1,h2,h3 {
+    color: white !important;
+}
+
+.card h2 {
+    color: black !important;
+}
+
+.container.mt-3 h1 {
+    color: black !important;
+}
+
+.container h1 + p.lead { 
+    background-color: rgb(233, 233, 233, .82);
+    padding: 2rem;
+    border-radius: 40px 0;
+}
+
+.container p.lead + p {
+    color: white;
+}
+
+/* Buttons and Links */
+
+.btn-primary{
+    background-color: transparent !important;
+    border: 1px solid white !important;
+}
+
+input.btn.btn-primary.btn-block {
+    /* login btn */
+    background-color: blue !important;
+}
+
+.btn-warning{
+    background-color: transparent !important;
+    border: 1px solid gold !important;
+    color: gold !important;
+}
+
+.btn-primary:hover, .btn-warning:hover {
+    transform: scale(1.05);
+}
+
+.btn-info {
+    background-color: transparent !important;
+    color: #bd00f7 !important;
+    border: 1px solid #bd00f7 !important;
+}
+
+.btn-info:hover {
+    transform: translateY(-2px);    
+    
+}
+
+a.text-info {
+    color: #bd00f7 !important;
+}
+
+.card a.text-info:hover {
+    color: blue !important;
+}
